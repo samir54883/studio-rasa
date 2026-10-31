@@ -5,6 +5,12 @@ import FilmProject from "@/components/FilmProject/FilmProject";
 
 import { films } from "@/data/films";
 
+export function generateStaticParams() {
+  return films.map((film) => ({
+    slug: film.slug,
+  }));
+}
+
 export default async function FilmProjectPage({ params }) {
   const { slug } = await params;
 

@@ -5,6 +5,12 @@ import PhotographyProject from "@/components/PhotographyProject/PhotographyProje
 
 import { photographyProjects } from "@/data/photography";
 
+export function generateStaticParams() {
+  return photographyProjects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export default async function PhotographyProjectPage({ params }) {
   const { slug } = await params;
 
