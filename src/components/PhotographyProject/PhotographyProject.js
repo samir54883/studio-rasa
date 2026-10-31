@@ -1,4 +1,5 @@
 import styles from "./PhotographyProject.module.css";
+import ContactIcons from "@/components/ContactIcons/ContactIcons";
 
 function Photo({ src, className = "" }) {
   if (src) {
@@ -74,20 +75,7 @@ export default function PhotographyProject({ project }) {
           <h2 className={styles.connectTitle}>LET&apos;S CONNECT</h2>
 
           <div className={styles.contactBox}>
-            <div className={styles.contactRow}>
-              <span>☎</span>
-              <div />
-            </div>
-
-            <div className={styles.contactRow}>
-              <span>✉</span>
-              <div />
-            </div>
-
-            <div className={styles.contactRow}>
-              <span>◎</span>
-              <div />
-            </div>
+           <ContactIcons />
           </div>
         </div>
 

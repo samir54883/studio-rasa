@@ -1,4 +1,5 @@
 import styles from "./FilmProject.module.css";
+import ContactIcons from "@/components/ContactIcons/ContactIcons";
 
 export default function FilmProject({ film }) {
   return (
@@ -33,20 +34,7 @@ export default function FilmProject({ film }) {
           <h2 className={styles.connectTitle}>LET&apos;S CONNECT</h2>
 
           <div className={styles.contactBox}>
-            <div className={styles.contactRow}>
-              <span className={styles.icon}>☎</span>
-              <div className={styles.contactField}></div>
-            </div>
-
-            <div className={styles.contactRow}>
-              <span className={styles.icon}>✉</span>
-              <div className={styles.contactField}></div>
-            </div>
-
-            <div className={styles.contactRow}>
-              <span className={styles.icon}>◎</span>
-              <div className={styles.contactField}></div>
-            </div>
+            <ContactIcons />
           </div>
         </div>
 

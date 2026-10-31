@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./Photography.module.css";
+import ContactIcons from "@/components/ContactIcons/ContactIcons";
 
 export default function Photography({ projects }) {
   return (
@@ -35,20 +36,7 @@ export default function Photography({ projects }) {
           <h2>LET&apos;S CONNECT</h2>
 
           <div className={styles.contactBox}>
-            <div className={styles.contactRow}>
-              <span>☎</span>
-              <div />
-            </div>
-
-            <div className={styles.contactRow}>
-              <span>✉</span>
-              <div />
-            </div>
-
-            <div className={styles.contactRow}>
-              <span>◎</span>
-              <div />
-            </div>
+            <ContactIcons />
           </div>
         </div>
 
