@@ -26,7 +26,7 @@ export default function Home() {
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
             <strong> Ut enim ad minim veniam,</strong> quis nostrud exercitation
             ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
