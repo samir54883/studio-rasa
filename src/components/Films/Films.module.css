@@ -1,0 +1,116 @@
+.films {
+  width: 100%;
+
+  min-height: 100vh;
+
+  padding: 110px 0 90px;
+
+  background: #f1f1f1;
+}
+
+.content {
+  width: min(100% - 64px, 620px);
+
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 40px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.filmList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.filmCard {
+  width: 100%;
+
+  aspect-ratio: 2 / 1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #cccccb;
+
+  color: #111111;
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition: opacity 0.2s ease;
+}
+
+.filmCard span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.filmCard:hover {
+  opacity: 0.8;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .films {
+    padding: 90px 0 70px;
+  }
+
+  .content {
+    width: calc(100% - 48px);
+  }
+
+  .title {
+    margin-bottom: 32px;
+
+    font-size: 18px;
+  }
+
+  .filmList {
+    gap: 24px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .films {
+    padding: 75px 0 55px;
+  }
+
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .title {
+    margin-bottom: 26px;
+
+    font-size: 16px;
+  }
+
+  .filmList {
+    gap: 20px;
+  }
+
+  .filmCard span {
+    font-size: 10px;
+  }
+}

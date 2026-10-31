@@ -1,0 +1,375 @@
+/* =========================
+   SHARED CONTENT WIDTH
+========================= */
+
+.content {
+  width: min(100% - 64px, 620px);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project {
+  width: 100%;
+  padding: 110px 0 75px;
+
+  background: #ffffff;
+}
+
+.title {
+  margin-bottom: 42px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  /* Increased from 8px to 16px */
+  gap: 16px;
+}
+
+.photo {
+  width: 100%;
+  height: 190px;
+
+  background: #cccccb;
+
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   LARGE LANDSCAPE ROWS
+========================= */
+
+.large {
+  height: 295px;
+}
+
+
+/* =========================
+   THREE EQUAL COLUMNS
+========================= */
+
+.threeColumns {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Increased from 8px to 16px */
+  gap: 16px;
+}
+
+.threeColumns .photo {
+  height: 220px;
+}
+
+
+/* =========================
+   WIDE LEFT + NARROW RIGHT
+========================= */
+
+.twoColumnsWideLeft {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  /* Increased from 8px to 16px */
+  gap: 16px;
+}
+
+.twoColumnsWideLeft .photo {
+  height: 220px;
+}
+
+
+/* =========================
+   NARROW LEFT + WIDE RIGHT
+========================= */
+
+.twoColumnsWideRight {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr;
+
+  /* Increased from 8px to 16px */
+  gap: 16px;
+}
+
+.twoColumnsWideRight .photo {
+  height: 220px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.description h2 {
+  margin-bottom: 18px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.description p {
+  margin-bottom: 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-wrap;
+
+  line-height: 1.35;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   LET'S CONNECT
+========================= */
+
+.connect {
+  width: 100%;
+
+  padding: 48px 0 35px;
+
+  background: #eeeeee;
+}
+
+.connectTitle {
+  margin-bottom: 38px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+.contactBox {
+  width: 100%;
+
+  padding: 28px;
+
+  background: #d8d8d8;
+}
+
+.contactRow {
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.contactRow:last-child {
+  margin-bottom: 0;
+}
+
+.contactRow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.contactRow div {
+  width: 100%;
+  height: 31px;
+
+  border: 1px solid #333333;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 85px;
+  padding-bottom: 5px;
+
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .content {
+    width: calc(100% - 48px);
+  }
+
+  .project {
+    padding: 90px 0 60px;
+  }
+
+  .title {
+    margin-bottom: 32px;
+
+    font-size: 18px;
+  }
+
+  .large {
+    height: 250px;
+  }
+
+  .threeColumns .photo,
+  .twoColumnsWideLeft .photo,
+  .twoColumnsWideRight .photo {
+    height: 190px;
+  }
+
+  .description {
+    padding-top: 40px;
+  }
+
+  .connect {
+    padding: 44px 0 30px;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .project {
+    padding: 75px 0 45px;
+  }
+
+  .title {
+    margin-bottom: 26px;
+
+    font-size: 16px;
+  }
+
+  /* Doubled from 5px to 10px */
+  .gallery {
+    gap: 10px;
+  }
+
+  .threeColumns,
+  .twoColumnsWideLeft,
+  .twoColumnsWideRight {
+    gap: 10px;
+  }
+
+  .large {
+    height: 180px;
+  }
+
+  .threeColumns .photo,
+  .twoColumnsWideLeft .photo,
+  .twoColumnsWideRight .photo {
+    height: 135px;
+  }
+
+  .description {
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+
+  .description h2 {
+    margin-bottom: 12px;
+
+    font-size: 13px;
+  }
+
+  .description p {
+    font-size: 11px;
+
+    line-height: 1.3;
+  }
+
+  .connect {
+    padding: 38px 0 25px;
+  }
+
+  .connectTitle {
+    margin-bottom: 24px;
+
+    font-size: 15px;
+  }
+
+  .contactBox {
+    padding: 20px;
+  }
+
+  .contactRow {
+    grid-template-columns: 24px 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+  }
+
+  .contactRow span {
+    font-size: 18px;
+  }
+
+  .contactRow div {
+    height: 27px;
+  }
+
+  .footer {
+    margin-top: 55px;
+
+    font-size: 9px;
+  }
+}

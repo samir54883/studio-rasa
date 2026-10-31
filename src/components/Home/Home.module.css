@@ -1,0 +1,240 @@
+/* =========================
+   SHARED INNER COLUMN
+========================= */
+
+.content {
+  width: min(100% - 64px, 620px);
+  margin: 0 auto;
+}
+
+.content h2 {
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #cfcfcf;
+
+  font-size: 22px;
+  font-weight: 550;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  width: 100%;
+  padding: 58px 0;
+
+  background: #ffffff;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.about p + p {
+  margin-top: 0;
+}
+
+
+/* =========================
+   FILMS
+========================= */
+
+.films {
+  width: 100%;
+
+  padding: 60px 0 90px;
+
+  background: #f1f1f1;
+}
+
+.filmList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.filmCard {
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 2 / 1;
+
+  background: #cccccb;
+}
+
+
+/* =========================
+   CONNECT
+========================= */
+
+.connect {
+  width: 100%;
+
+  padding: 50px 0 20px;
+
+  background: #ffffff;
+}
+
+.contactBox {
+  width: 100%;
+
+  padding: 28px;
+
+  background: #dedede;
+}
+
+.contactRow {
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.contactRow:last-child {
+  margin-bottom: 0;
+}
+
+.contactRow span {
+  font-size: 23px;
+}
+
+.contactRow div {
+  height: 31px;
+
+  border: 1px solid #333333;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 45px 16px 36px;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .content {
+    width: calc(100% - 48px);
+  }
+
+  .hero {
+    height: 480px;
+
+    font-size: 13px;
+  }
+
+  .about {
+    padding: 48px 0;
+  }
+
+  .films {
+    padding: 48px 0 70px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .content h2 {
+    margin-bottom: 18px;
+
+    font-size: 15px;
+  }
+
+  .hero {
+    height: 360px;
+
+    font-size: 11px;
+  }
+
+  .about {
+    padding: 38px 0;
+  }
+
+  .about p {
+    font-size: 11px;
+  }
+
+  .films {
+    padding: 38px 0 55px;
+  }
+
+  .filmList {
+    gap: 20px;
+  }
+
+  .connect {
+    padding: 38px 0 15px;
+  }
+
+  .contactBox {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contactRow {
+    grid-template-columns: 24px 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+  }
+
+  .contactRow span {
+    font-size: 18px;
+  }
+
+  .contactRow div {
+    height: 27px;
+  }
+
+  .footer {
+    padding: 32px 16px;
+
+    font-size: 9px;
+  }
+}

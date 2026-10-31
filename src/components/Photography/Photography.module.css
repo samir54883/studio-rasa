@@ -1,0 +1,260 @@
+/* =========================
+   SHARED CONTENT WIDTH
+========================= */
+
+.content {
+  width: min(100% - 64px, 620px);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   PHOTOGRAPHY
+========================= */
+
+.photography {
+  width: 100%;
+
+  padding: 110px 0 90px;
+
+  background: #ffffff;
+}
+
+.title {
+  margin-bottom: 42px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   PROJECT LIST
+========================= */
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.projectCard {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #cccccb;
+
+  color: #111111;
+  text-decoration: none;
+
+  overflow: hidden;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.projectCard span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.projectCard:hover {
+  opacity: 0.85;
+}
+
+
+/* =========================
+   LET'S CONNECT
+========================= */
+
+.connect {
+  width: 100%;
+
+  padding: 50px 0 35px;
+
+  background: #eeeeee;
+}
+
+.connect h2 {
+  margin-bottom: 38px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+.contactBox {
+  width: 100%;
+
+  padding: 28px;
+
+  background: #d8d8d8;
+}
+
+.contactRow {
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.contactRow:last-child {
+  margin-bottom: 0;
+}
+
+.contactRow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.contactRow div {
+  width: 100%;
+  height: 31px;
+
+  border: 1px solid #333333;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 85px;
+  padding-bottom: 5px;
+
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .content {
+    width: calc(100% - 48px);
+  }
+
+  .photography {
+    padding: 90px 0 70px;
+  }
+
+  .title {
+    margin-bottom: 32px;
+
+    font-size: 18px;
+  }
+
+  .projectList {
+    gap: 24px;
+  }
+
+  .connect {
+    padding: 44px 0 30px;
+  }
+
+  .connect h2 {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .photography {
+    padding: 75px 0 55px;
+  }
+
+  .title {
+    margin-bottom: 26px;
+
+    font-size: 16px;
+  }
+
+  .projectList {
+    gap: 20px;
+  }
+
+  .projectCard span {
+    font-size: 10px;
+  }
+
+  .connect {
+    padding: 38px 0 25px;
+  }
+
+  .connect h2 {
+    margin-bottom: 24px;
+
+    font-size: 15px;
+  }
+
+  .contactBox {
+    padding: 20px;
+  }
+
+  .contactRow {
+    grid-template-columns: 24px 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+  }
+
+  .contactRow span {
+    font-size: 18px;
+  }
+
+  .contactRow div {
+    height: 27px;
+  }
+
+  .footer {
+    margin-top: 55px;
+
+    font-size: 9px;
+  }
+}

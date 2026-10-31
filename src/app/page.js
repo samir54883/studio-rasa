@@ -1,8 +1,13 @@
-export default function Home() {
+import Navbar from "@/components/Navbar/Navbar";
+import Home from "@/components/Home/Home";
+
+export default function HomePage() {
   return (
-    <main>
-      <h1>STUDIO RASA</h1>
-      <p>Photography · Films · Stories</p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Home />
+      </main>
+    </>
   );
 }

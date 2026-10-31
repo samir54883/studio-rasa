@@ -1,0 +1,300 @@
+/* =========================
+   SHARED CONTENT WIDTH
+========================= */
+
+.content {
+  width: min(100% - 64px, 620px);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about {
+  width: 100%;
+  min-height: 700px;
+
+  padding: 110px 0 100px;
+
+  background: #ffffff;
+}
+
+.title {
+  margin-bottom: 55px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   ABOUT GRID
+========================= */
+
+.aboutGrid {
+  display: grid;
+
+  grid-template-columns: 1fr 0.9fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   ABOUT TEXT
+========================= */
+
+.aboutText {
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutText p {
+  margin-bottom: 24px;
+  width: 95%;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.35;
+}
+
+.aboutText p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+  width: 100%;
+}
+
+.profileImage {
+  width: 100%;
+
+  aspect-ratio: 0.7 / 1;
+
+  background: #cccccb;
+}
+
+.profileCaption {
+  margin-top: 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   LET'S CONNECT
+========================= */
+
+.connect {
+  width: 100%;
+
+  padding: 48px 0 35px;
+
+  background: #eeeeee;
+}
+
+.connectTitle {
+  margin-bottom: 38px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+.contactBox {
+  width: 100%;
+
+  padding: 28px;
+
+  background: #d8d8d8;
+}
+
+.contactRow {
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 15px;
+}
+
+.contactRow:last-child {
+  margin-bottom: 0;
+}
+
+.contactRow span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.contactField {
+  width: 100%;
+  height: 31px;
+
+  border: 1px solid #333333;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 85px;
+
+  padding-bottom: 5px;
+
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .content {
+    width: calc(100% - 48px);
+  }
+
+  .about {
+    min-height: auto;
+
+    padding: 90px 0 80px;
+  }
+
+  .title {
+    margin-bottom: 40px;
+
+    font-size: 18px;
+  }
+
+  .aboutGrid {
+    gap: 40px;
+  }
+
+  .aboutText p {
+    font-size: 12px;
+  }
+
+  .connect {
+    padding: 44px 0 30px;
+  }
+
+  .footer {
+    margin-top: 65px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .content {
+    width: calc(100% - 40px);
+  }
+
+  .about {
+    min-height: auto;
+
+    padding: 75px 0 60px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .aboutText p {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+  }
+
+
+  /* PROFILE */
+
+  .profile {
+    width: 70%;
+  }
+
+  .profileCaption {
+    font-size: 9px;
+  }
+
+
+  /* LET'S CONNECT */
+
+  .connect {
+    padding: 38px 0 25px;
+  }
+
+  .connectTitle {
+    margin-bottom: 24px;
+
+    font-size: 15px;
+  }
+
+  .contactBox {
+    padding: 20px;
+  }
+
+  .contactRow {
+    grid-template-columns: 24px 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+  }
+
+  .contactRow span {
+    font-size: 18px;
+  }
+
+  .contactField {
+    height: 27px;
+  }
+
+  .footer {
+    margin-top: 55px;
+
+    font-size: 9px;
+  }
+}
