@@ -4,6 +4,8 @@ const nextConfig = {
 
   trailingSlash: true,
 
+  basePath: "/studio-rasa",
+
   images: {
     unoptimized: true,
   },
