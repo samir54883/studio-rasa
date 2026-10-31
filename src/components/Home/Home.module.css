@@ -16,12 +16,16 @@
 
 
 /* =========================
-   HERO
+   HERO / ENTRY VIDEO
 ========================= */
 
 .hero {
+  position: relative;
+
   width: 100%;
-  height: 600px;
+
+  height: 105vh;
+  min-height: 105dvh;
 
   display: flex;
   align-items: center;
@@ -29,8 +33,37 @@
 
   background: #cfcfcf;
 
+  overflow: hidden;
+
   font-size: 22px;
   font-weight: 550;
+}
+
+/* =========================
+   FUTURE REAL HERO VIDEO
+========================= */
+
+.heroVideo {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+
+/* Keep temporary hero content above the video */
+
+.hero > span,
+.hero > p,
+.hero > div {
+  position: relative;
+
+  z-index: 1;
 }
 
 
@@ -40,6 +73,7 @@
 
 .about {
   width: 100%;
+
   padding: 58px 0;
 
   background: #ffffff;
@@ -104,31 +138,6 @@
   background: #dedede;
 }
 
-.contactRow {
-  display: grid;
-
-  grid-template-columns: 30px 1fr;
-  align-items: center;
-
-  gap: 16px;
-
-  margin-bottom: 15px;
-}
-
-.contactRow:last-child {
-  margin-bottom: 0;
-}
-
-.contactRow span {
-  font-size: 23px;
-}
-
-.contactRow div {
-  height: 31px;
-
-  border: 1px solid #333333;
-}
-
 
 /* =========================
    FOOTER
@@ -155,9 +164,12 @@
   }
 
   .hero {
-    height: 480px;
+    /*
+      No height override here.
+      Hero remains full viewport.
+    */
 
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .about {
@@ -186,9 +198,12 @@
   }
 
   .hero {
-    height: 360px;
+    /*
+      Still full viewport.
+      Only typography changes.
+    */
 
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .about {
@@ -213,28 +228,29 @@
 
   .contactBox {
     width: 100%;
+
     padding: 20px;
-  }
-
-  .contactRow {
-    grid-template-columns: 24px 1fr;
-
-    gap: 12px;
-
-    margin-bottom: 12px;
-  }
-
-  .contactRow span {
-    font-size: 18px;
-  }
-
-  .contactRow div {
-    height: 27px;
   }
 
   .footer {
     padding: 32px 16px;
 
     font-size: 9px;
+  }
+}
+
+
+/* =========================
+   LANDSCAPE MOBILE
+========================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    /*
+      Height remains controlled by
+      the main full-viewport rule.
+    */
+
+    font-size: 14px;
   }
 }
